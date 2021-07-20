@@ -15,6 +15,12 @@ print(student.get("phone")) # Will return none since the key "phone"  does not e
 print(student.get("phone", "not found")) # Will return a custom value if the key does not exist
 
 # Update a dictionary
-student.upadte({"name" : "Jane", "age" : 26, "phone" : "555-555-5555"})
+student.update({"name" : "Jane", "age" : 26, "phone" : "555-555-5555"})
 # NOTE: A dictionary can also be updated with student["name"] = "Hello, world!"
+print(student)
+
+# Delete a key value
+del student["age"]
+student.update({"age" : 26})
+age = student.pop("age") # copy value of a key to a variable and then remove the value of the key
 print(student)
