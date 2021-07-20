@@ -6,3 +6,5 @@ student = {"name" : "John", "age": 25, "courses" : ["Math", "CompiSci"]}
 print(student) # Print the whole dictionary
 
 print(student["name"]) # Print the name key from the dictionary 
+
+print(student["courses"])
