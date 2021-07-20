@@ -13,3 +13,8 @@ print(student["courses"])
 print(student.get("name"))
 print(student.get("phone")) # Will return none since the key "phone"  does not exist
 print(student.get("phone", "not found")) # Will return a custom value if the key does not exist
+
+# Update a dictionary
+student.upadte({"name" : "Jane", "age" : 26, "phone" : "555-555-5555"})
+# NOTE: A dictionary can also be updated with student["name"] = "Hello, world!"
+print(student)
