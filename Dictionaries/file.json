@@ -1,0 +1,8 @@
+{
+    "name": "Jane",
+    "courses": [
+        "Math",
+        "CompiSci"
+    ],
+    "phone": "555-555-5555"
+}
