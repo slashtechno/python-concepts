@@ -1,5 +1,9 @@
-# I am following the following tutorial to learn dictionaries
+# I am following the following tutorials to learn dictionaries
 # https://www.youtube.com/watch?v=daefaLgNkw0
+# https://www.youtube.com/watch?v=9N6a-VLBa2I
+
+import json
+
 student = {"name": "John", "age": 25, "courses": ["Math", "CompiSci"]}
 
 print("The dictionary:")
@@ -54,6 +58,11 @@ print("Pairs of keys and values in the dictionary")
 for key, value in student.items():
     print(key, value)  # The comma is like + but adds a space
 
-#using a for loop
+# using a for loop
 for person in student:
     print(student["name"])
+
+# using JSON
+
+# convert Python dictionary to JSON format
+json_dictionary = json.dumps(student, indent=4)
