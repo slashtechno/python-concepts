@@ -3,7 +3,6 @@
 # https://www.youtube.com/watch?v=9N6a-VLBa2I
 
 import json
-
 student = {"name": "John", "age": 25, "courses": ["Math", "CompiSci"]}
 
 print("The dictionary:")
@@ -66,3 +65,18 @@ for person in student:
 
 # convert Python dictionary to JSON format
 json_dictionary = json.dumps(student, indent=4)
+
+# write JSON to a file
+json_file = "file.json"
+# try:
+#     open(json_file, "x")
+# except FileExistsError:
+#     print("File exists")
+with open(json_file, "w") as file:
+    file.write(json_dictionary)
+student = "Hello, world!"
+print("Value of student does not contain a dictionary anymore")
+print("\n"+student+"\n")
+with open(json_file, "r") as file:
+    student_json = file.read()
+student = print(student_json)
