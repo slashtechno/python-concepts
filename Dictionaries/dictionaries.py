@@ -79,4 +79,6 @@ print("Value of student does not contain a dictionary anymore")
 print("\n"+student+"\n")
 with open(json_file, "r") as file:
     student_json = file.read()
-student = print(student_json)
+print(student_json)
+# convert the JSON into a Python json_dictionary
+student = json.loads(student_json)
