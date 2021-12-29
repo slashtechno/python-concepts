@@ -1,4 +1,4 @@
-# I am following the following tutorials to learn dictionaries
+# I used the following tutorials to learn python dictionaries
 # https://www.youtube.com/watch?v=daefaLgNkw0
 # https://www.youtube.com/watch?v=9N6a-VLBa2I
 
